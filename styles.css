@@ -441,8 +441,8 @@ main,
 
 .menu-columns {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.4rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 .menu-column {
@@ -463,10 +463,11 @@ main,
 
 .menu-row {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: minmax(0, auto) 1fr auto;
     align-items: center;
     gap: 0.75rem;
     padding: 0.85rem 0;
+    width: 100%;
 }
 
 .menu-row + .menu-row {
@@ -494,6 +495,8 @@ main,
     font-weight: 900;
     font-variant-numeric: tabular-nums;
     letter-spacing: 0.03em;
+    justify-self: end;
+    text-align: right;
 }
 
 .menu-footer-note {
