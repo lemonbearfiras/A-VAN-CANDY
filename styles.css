@@ -478,6 +478,7 @@ main,
     font-family: "Baloo 2", cursive;
     font-size: 1.35rem;
     line-height: 1;
+    font-weight: 700;
 }
 
 .menu-row span {
@@ -491,6 +492,8 @@ main,
     color: var(--pink-deep);
     font-size: 1rem;
     font-weight: 900;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.03em;
 }
 
 .menu-footer-note {
