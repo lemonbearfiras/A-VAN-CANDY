@@ -165,7 +165,6 @@ main {
 }
 
 .hero-card,
-.sheet-card,
 .form-card {
     padding: 1.8rem;
     border-radius: var(--radius-xl);
@@ -190,7 +189,6 @@ main {
     line-height: 1.6;
 }
 
-.sheet-card,
 .form-card {
     margin-bottom: 1.5rem;
 }
@@ -311,7 +309,6 @@ select {
     }
 
     .hero-card,
-    .sheet-card,
     .form-card {
         padding: 1.3rem;
     }
