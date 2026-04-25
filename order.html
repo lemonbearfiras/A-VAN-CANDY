@@ -52,28 +52,37 @@
                 <h2>A VAN CANDIES order form.</h2>
             </div>
 
-            <form class="order-form">
+            <form class="order-form" id="orderForm">
                 <div class="form-grid">
                     <label>
                         <span>Name</span>
-                        <input type="text" name="name" placeholder="Enter your name">
+                        <input type="text" name="name" placeholder="Enter your name" required>
                     </label>
                     <label>
                         <span>Email</span>
-                        <input type="email" name="email" placeholder="Enter your email">
+                        <input type="email" name="email" placeholder="Enter your email" required>
                     </label>
                     <label>
                         <span>Class</span>
-                        <input type="text" name="class" placeholder="Enter your class">
+                        <input type="text" name="class" placeholder="Enter your class" required>
                     </label>
                     <label>
                         <span>School</span>
-                        <input type="text" name="school" placeholder="Enter your school">
+                        <input type="text" name="school" placeholder="Enter your school" required>
                     </label>
                     <label>
                         <span>Phone Number</span>
-                        <input type="tel" name="phone" placeholder="Enter your phone number">
+                        <input type="tel" name="phone" placeholder="Enter your phone number" required>
                     </label>
+                </div>
+
+                <div class="order-details-card">
+                    <div class="mini-heading">
+                        <p>Order Details</p>
+                        <h3>Choose your candy and quantity.</h3>
+                    </div>
+
+                    <div class="form-grid form-grid-order">
                     <label>
                         <span>Candy Item</span>
                         <select name="item">
@@ -95,12 +104,13 @@
                     </label>
                     <label>
                         <span>Quantity</span>
-                        <input type="number" name="quantity" min="1" value="1">
+                        <input type="number" name="quantity" min="1" value="1" required>
                     </label>
                     <label>
                         <span>Pickup / Notes</span>
                         <input type="text" name="notes" placeholder="Add notes if needed">
                     </label>
+                    </div>
                 </div>
 
                 <div class="price-board">
@@ -124,8 +134,10 @@
                     <button type="submit" class="button button-primary">Submit Order</button>
                     <a class="button button-secondary" href="index.html">Back to Home</a>
                 </div>
+                <p class="form-status" id="formStatus" aria-live="polite"></p>
             </form>
         </section>
     </main>
+    <script src="order.js"></script>
 </body>
 </html>

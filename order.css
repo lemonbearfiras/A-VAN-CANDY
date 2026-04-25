@@ -193,6 +193,21 @@ main {
     margin-bottom: 1.5rem;
 }
 
+.form-status {
+    margin: 0;
+    min-height: 1.5rem;
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.form-status[data-state="success"] {
+    color: #1f8a52;
+}
+
+.form-status[data-state="error"] {
+    color: #b23068;
+}
+
 .section-heading {
     margin-bottom: 1rem;
 }
@@ -207,10 +222,41 @@ main {
     gap: 1.5rem;
 }
 
+.order-details-card {
+    padding: 1.3rem;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(180deg, rgba(255, 245, 250, 0.95), rgba(255, 255, 255, 0.9));
+    border: 1px solid rgba(255, 95, 162, 0.18);
+}
+
+.mini-heading {
+    margin-bottom: 1rem;
+}
+
+.mini-heading p {
+    margin: 0 0 0.25rem;
+    color: var(--pink-deep);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.mini-heading h3 {
+    margin: 0;
+    font-family: "Baloo 2", cursive;
+    font-size: 1.9rem;
+    line-height: 1;
+}
+
 .form-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
+}
+
+.form-grid-order {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 label {
@@ -287,7 +333,8 @@ select {
 
 @media (max-width: 900px) {
     .hero,
-    .form-grid {
+    .form-grid,
+    .form-grid-order {
         grid-template-columns: 1fr;
     }
 }
