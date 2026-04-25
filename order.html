@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A VAN CANDIES | Order</title>
+    <meta
+        name="description"
+        content="Place a candy order with A VAN CANDIES using a bright, simple order form."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="background-glow background-glow-left"></div>
+    <div class="background-glow background-glow-right"></div>
+
+    <header class="site-header">
+        <a class="brand-pill" href="index.html">A VAN CANDIES</a>
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="#order-form">Order Form</a>
+            <a href="#sheet">Excel Sheet</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Order Page</p>
+                <h1>Sweet orders made simple.</h1>
+                <p class="hero-text">
+                    Fill in your details, pick your candy, and keep every order organized for A VAN CANDIES.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#order-form">Start Order</a>
+                    <a class="button button-secondary" href="customer_orders_template.xlsx">Open Excel Template</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <span>Order Details</span>
+                <strong>Name, email, class, school, phone number, and candy selection in one place.</strong>
+            </div>
+        </section>
+
+        <section class="sheet-card" id="sheet">
+            <div class="section-heading">
+                <p class="eyebrow">Excel File</p>
+                <h2>Ready-made template for customer details.</h2>
+            </div>
+            <p class="section-text">
+                The Excel file is prepared with the columns: Name, Email, Class, School, and Phone Number.
+            </p>
+            <a class="button button-primary" href="customer_orders_template.xlsx">Download Excel Template</a>
+        </section>
+
+        <section class="form-card" id="order-form">
+            <div class="section-heading">
+                <p class="eyebrow">Place Order</p>
+                <h2>A VAN CANDIES order form.</h2>
+            </div>
+
+            <form class="order-form">
+                <div class="form-grid">
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="name" placeholder="Enter your name">
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="Enter your email">
+                    </label>
+                    <label>
+                        <span>Class</span>
+                        <input type="text" name="class" placeholder="Enter your class">
+                    </label>
+                    <label>
+                        <span>School</span>
+                        <input type="text" name="school" placeholder="Enter your school">
+                    </label>
+                    <label>
+                        <span>Phone Number</span>
+                        <input type="tel" name="phone" placeholder="Enter your phone number">
+                    </label>
+                    <label>
+                        <span>Candy Item</span>
+                        <select name="item">
+                            <option>Fruit chews</option>
+                            <option>Mentos</option>
+                            <option>Cloud 9</option>
+                            <option>Chupa chups</option>
+                            <option>Sugus</option>
+                            <option>Haribo</option>
+                            <option>Chips</option>
+                            <option>Jellybean (Halal)</option>
+                            <option>Sochews Candy</option>
+                            <option>Fruit plus</option>
+                            <option>Yupi</option>
+                            <option>Tictac</option>
+                            <option>Doublemint</option>
+                            <option>Choco Pie</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Quantity</span>
+                        <input type="number" name="quantity" min="1" value="1">
+                    </label>
+                    <label>
+                        <span>Pickup / Notes</span>
+                        <input type="text" name="notes" placeholder="Add notes if needed">
+                    </label>
+                </div>
+
+                <div class="price-board">
+                    <div class="price-row"><strong>Fruit chews</strong><span>RM 0.50</span></div>
+                    <div class="price-row"><strong>Mentos</strong><span>RM 2.00</span></div>
+                    <div class="price-row"><strong>Cloud 9</strong><span>RM 2.50</span></div>
+                    <div class="price-row"><strong>Chupa chups</strong><span>RM 1.50</span></div>
+                    <div class="price-row"><strong>Sugus</strong><span>RM 1.50</span></div>
+                    <div class="price-row"><strong>Haribo</strong><span>RM 6.50</span></div>
+                    <div class="price-row"><strong>Chips</strong><span>RM 4.00</span></div>
+                    <div class="price-row"><strong>Jellybean (Halal)</strong><span>RM 3.00</span></div>
+                    <div class="price-row"><strong>Sochews Candy</strong><span>RM 2.60</span></div>
+                    <div class="price-row"><strong>Fruit plus</strong><span>RM 4.50</span></div>
+                    <div class="price-row"><strong>Yupi</strong><span>RM 0.50</span></div>
+                    <div class="price-row"><strong>Tictac</strong><span>RM 3.00</span></div>
+                    <div class="price-row"><strong>Doublemint</strong><span>RM 2.50</span></div>
+                    <div class="price-row"><strong>Choco Pie</strong><span>RM 1.75</span></div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="button button-primary">Submit Order</button>
+                    <a class="button button-secondary" href="index.html">Back to Home</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
